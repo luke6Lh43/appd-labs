@@ -1,0 +1,1 @@
+In the future, here will be step by step approach to enable additional capabilities in Appd Cloud for OpenTelemetry demo.
