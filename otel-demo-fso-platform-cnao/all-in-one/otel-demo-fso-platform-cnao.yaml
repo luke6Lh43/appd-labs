@@ -270,7 +270,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
   annotations:
     appdynamics.com/exporter_type: "kafka"
-    appdynamics.com/kafka_cluster_name: "kafka"
+    # When multiple OTel demo is deployed to same cluster, below value should be unique to have each kafka cluster monitored seperately
+    appdynamics.com/kafka_cluster_name: "kafka-cluster"
     prometheus.io/path: "/metrics"
     prometheus.io/port: "9308"
 spec:
